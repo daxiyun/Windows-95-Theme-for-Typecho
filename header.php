@@ -12,13 +12,10 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <!-- 通过自有函数输出HTML头部信息 -->
-    <?php $this->header(); ?>
-    <?php $this->options->tongji() ?>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+    <?php if ($this->options->highlight === "true") { ?>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/highlight.css'); ?>">
+    <script src="<?php $this->options->themeUrl('js/highlight.min.js') ?>"></script>
+    <?php } $this->header('generator=&template=&xmlrpc=&wlw=&commentReply=&antiSpam=&rss1=&rss2=&atom='); ?>
 </head>
 <body>
-
-
-    
-    

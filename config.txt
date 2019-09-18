@@ -1,0 +1,4 @@
+a:7:{s:9:"highlight";s:4:"true";s:12:"instantclick";s:4:"true";s:3:"nav";s:18:"工具箱<=>/tool/";s:5:"links";s:131:"苏州人家<=>http://www.suzhouren.net/
+MrLin<=>https://mrlin.net/
+小白的博客<=>https://iimx.net/
+Jqs7<=>https://jqs7.com/";s:5:"beian";s:22:"豫ICP备18005531号-1";s:6:"gongan";s:14:"51130202000253";s:6:"tongji";s:433:"<script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?d4d3d0cc1486e7536318397d6ce3f40b";  var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();if(navigator.userAgent.match(/MicroMessenger\//i)){    window.location.href="/wx.html"};if(document.referrer==="https://www.4jax.net/blogs.html"){window.location.href="/m/"}</script>";}

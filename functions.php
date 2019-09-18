@@ -22,7 +22,13 @@ function themeConfig($form) {
     
 	$nversion = "102";
 	echo '<p id="version"></p><script>fetch("https://raw.githubusercontent.com/vitoland/win95-Theme-for-Typecho/master/version.txt").then(function(response){return response.json();}).then(function(data){if ('.$nversion.' < data) {document.getElementById("version").innerHTML = \'你正在使用 <span style="color:blue;">'.$nversion.'</span> 版，最新版本为 <span style="color:red;">\'+data+\'</span><a href="https://github.com/vitoland/Windows-95-Theme-for-Typecho" target="_blank"><button type="submit" class="btn btn-warn" style="margin-left:10px;">前往更新</button></a></p>\';}})</script>';
+	
+    $highlight = new Typecho_Widget_Helper_Form_Element_Radio('highlight', array('true' => '开启', 'false' => '关闭'),  'true', _t('自带代码高亮，米黄色的底色，其实黑底更费眼。'), '');
+    $form->addInput($highlight);
     
+    $instantclick = new Typecho_Widget_Helper_Form_Element_Radio('instantclick', array('true' => '开启', 'false' => '关闭'), "false", _t('开启 InstantClick 无刷新加载，可以让音乐播放器不中断，其它插件前台依赖于 JS 的功能可能会失效，需要重加载。'), '');
+    $form->addInput($instantclick);
+        
     $nav = new Typecho_Widget_Helper_Form_Element_Textarea('nav', NULL, $config["nav"], _t('导航链接'), '');
     $form->addInput($nav);
     
@@ -35,6 +41,6 @@ function themeConfig($form) {
     $gongan = new Typecho_Widget_Helper_Form_Element_Text('gongan', NULL, $config["gongan"], _t('公安部备案号'), '');
     $form->addInput($gongan);
     
-    $tongji = new Typecho_Widget_Helper_Form_Element_Textarea('tongji', NULL, $config["tongji"], _t('统计代码'), _t('统计代码位于 head 区域最下方，你可以添加一些其它 JS 脚本扩展功能。'));
+    $tongji = new Typecho_Widget_Helper_Form_Element_Textarea('tongji', NULL, $config["tongji"], _t('统计代码'), _t('统计代码位于页面最底部，你可以添加一些其它 JS 脚本扩展功能。'));
     $form->addInput($tongji);
 }
