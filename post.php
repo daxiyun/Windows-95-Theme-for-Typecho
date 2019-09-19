@@ -15,8 +15,7 @@
             $content = preg_replace($pattern, $replacement, $this->content);
             echo $content;
         ?>
-        <div id="bigBox" onclick="picClose()"><img id="bigImg"></div> 
-        <?php Digg_Plugin::output(); ?>
+        <div id="bigBox" onclick="picClose()"><img id="bigImg"></div>
 		<?php $this->need('comments.php'); ?>
     </div>
     <div class="post_total">
