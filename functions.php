@@ -19,7 +19,7 @@ function themeConfig($form) {
     } else {
         file_put_contents(__DIR__."/config.txt", $result);
     }
-    // 将下方的版本号改为 999 即可不在提示升级。
+    // 将下方的版本号改为 999 即可不再提示升级。
 	$nversion = "103";
 	echo '<p id="version"></p><script>fetch("https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/version.txt").then(function(response){return response.json();}).then(function(data){if ('.$nversion.' < data) {document.getElementById("version").innerHTML = \'你正在使用 <span style="color:blue;">'.$nversion.'</span> 版，最新版本为 <span style="color:red;">\'+data+\'</span><a href="https://github.com/vitoland/Windows-95-Theme-for-Typecho" target="_blank"><button type="submit" class="btn btn-warn" style="margin-left:10px;">前往更新</button></a></p><p>如果不希望看到此提示，请点击上方的编辑当前外观，模板文件选择 functions.php ，按提示修改版本号代码。</p>\';}})</script>';
 
