@@ -6,9 +6,13 @@ blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}
 body{background:#008082;font-size:14px}
 #main{width:95%;min-width:300px;max-width:950px;margin:20px auto;background:#bfb8bf;border:2px solid;border-color:#fff8ff #000 #000 #fff8ff;padding:2px 0}
-.default_title,.post_title{padding:2px 4px 3px 4px;position:relative}
-.default_title h1,.post_title h1{color:#bfb8bf;font-size:14px;font-weight:700}
-.default_title img,.post_title img{float:left;width:14px;height:14px;margin:0 3px 0 0}
+
+.top_title h1{display:inline-block;width:89%;overflow:hidden;white-space:nowrap}
+.top_title .icon-close{display:inline-block;width:16px;height:16px;background:#ccc url(../img/icon.png) -80px -1px;float:right;border:1px solid;border-color:#fff8ff #000 #000 #fff8ff}
+
+.top_title{background:#00007f;padding:2px 4px 3px 4px;position:relative}
+.top_title h1{color:#bfb8bf;font-size:14px;font-weight:700}
+.top_title img{float:left;width:14px;height:14px;margin:0 3px 0 0}
 .post_title h1{display:inline-block;width:89%;overflow:hidden;white-space:nowrap}
 .post_title a{color:#000}
 .post_title .btn-close{background:#ccc url(../img/icon.png) -80px -1px;width:16px;height:16px;float:right;border:1px solid;border-color:#fff8ff #000 #000 #fff8ff}
@@ -16,26 +20,26 @@ body{background:#008082;font-size:14px}
 ul.topbar{list-style:none;padding:0 5px;margin:3px 0}
 ul.topbar li{display:inline-block;margin:0 5px 0 0}
 ul.topbar a{text-decoration:none;color:#000}
-.post_content,.post_list,.tag_list{background:#fff;border-width:2px;border-style:ridge groove groove ridge;border-color:#7f787f #fff8ff #fff8ff #7f787f}
+.post_content,.post_list,.tag_list{background:#f9f9f9;border-width:2px;border-style:ridge groove groove ridge;border-color:#7f787f #fff8ff #fff8ff #7f787f}
 .post_list{width:78.5%;margin:0 auto;height:800px;overflow-y:scroll;display:inline-block}
 .post_list ul{list-style:none}
 .post_list ul li{display:inline-block;margin:20px;width:139px;height:74px;overflow:hidden;text-overflow:ellipsis;text-align:center}
 .post_list ul li img{display:block;margin:0 auto;margin-bottom:8px}
 .post_list ul li a{text-decoration:none;color:#000}
-.tag_list{width:20%;margin:0 auto;height:800px;overflow-y:scroll;display:inline-block}
+.tag_list{width:20%;height:800px;overflow-y:scroll;display:inline-block}
 .tag_list img{height:16px;width:16px;margin:-2px 5px}
 .tag_list a{text-decoration:none;color:#000}
 .tag_list ul li{max-width:20ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#tag-list{background:transparent url(../img/pixel-alt.png) repeat-y 15px 0;margin:5px}
+#tag-list{background:transparent url(../img/pixel-alt.png) repeat-y 15px 0;margin:5px 5px 10px 5px}
 #tag-list li{padding:0 0 0 2px}
-#tag-list li a{background:#fff;display:block}
+#tag-list li a{background:#f9f9f9;display:block}
 #tag-list li ul li{background:transparent url(../img/pixel-alt.png) repeat-x 0 8px;margin:5px 0 0 15px;padding-left:10px}
 .post_total .foot{width:98.5%;font-size:12px;border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:3px;overflow:hidden;white-space:nowrap}
 .post_total .left,.post_total .right{border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:1px 3px}
 .post_total .left{width:33%;margin-left:2px}
 .post_total .right{width:64.5%;}
-.post_content{padding:5px 13px;position:relative;max-height:790px;margin:0 auto;overflow-y:scroll;overflow-x:scroll}
-.post_content p{font-size:16px;text-indent:2em;line-height:150%;margin-bottom:15px}
+.post_content{font-size:16px;padding:5px 13px;position:relative;max-height:790px;margin:0 auto;overflow-y:scroll;overflow-x:scroll}
+.post_content p{line-height:32px;text-indent:2em;line-height:150%;margin-bottom:15px}
 .post_content p img {max-width:90%;}
 .post_content a{color:#00f;margin-bottom:15px}
 .post_content h1{font-size:26px;font-weight:700;margin:30px 0}
@@ -69,7 +73,6 @@ ul.topbar a{text-decoration:none;color:#000}
 ::-webkit-scrollbar-button:horizontal:increment{background-image:url(../img/right.png)}
 ::-webkit-scrollbar-button:active{background-position:1px 2px}
 ::-webkit-scrollbar-corner{background-color:#cacaca}
-.default_title, .post_title{background:#00007f}
 
 /* 分页条 */
 .page-navigator{list-style:none;margin:10px 0;padding:0;text-align:center}
@@ -94,7 +97,7 @@ ul.topbar a{text-decoration:none;color:#000}
 .comment-author{display:block;margin-bottom:3px;color:#444}
 .comment-author .avatar{float:left;margin-right:10px}
 .comment-author cite{font-weight:bold;font-style:normal}
-.comment-content{line-height:1.5;word-wrap:break-word}
+.comment-content{margin: 10px 10px 10px 40px;line-height:1.5;word-wrap:break-word}
 .comment-content p{text-indent:0}
 .comment-content a img{background:#FFF;position:relative;bottom:-4px}
 .comment-content hr{margin:2em auto;width:100px;border:1px solid #E9E9E9;border-width:2px 0 0 0}
@@ -114,16 +117,10 @@ ul.topbar a{text-decoration:none;color:#000}
 
 /* 图标雪碧图 */
 .icon-home{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -152px 0}
-.icon-disk{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -98px 0}
 .icon-file-big{display:block;margin:0 0 10px 54px;width:32px;height:35px;background:url(../img/icon.png) -206px 0}
 .icon-file{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -116px 0}
+.icon-disk{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -98px 0}
 .icon-folder{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -134px 0}
 .icon-internet{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -170px 0}
-.icon-mycomputer{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -188px 0}
-.icon-pixel_alt{display:inline-block;margin-right:5px;width:2px;height:2px;background:url(../img/icon.png) -1px 0}
-.icon-track{display:inline-block;margin-right:5px;width:3px;height:2px;background:url(../img/icon.png) -5px 0}
-.icon-up{display:inline-block;margin-right:5px;width:12px;height:12px;background:url(../img/icon.png) -66px 0}
-.icon-down{display:inline-block;margin-right:5px;width:12px;height:12px;background:url(../img/icon.png) -10px 0}
-.icon-left{display:inline-block;margin-right:5px;width:12px;height:12px;background:url(../img/icon.png) -38px 0}
-.icon-right{display:inline-block;margin-right:5px;width:12px;height:12px;background:url(../img/icon.png) -52px 0}
+.icon-computer{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -188px 0}
 .icon-gongan{display:inline-block;width:12px;height:12px;background:url(../img/icon.png) -24px 0}

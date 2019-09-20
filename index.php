@@ -14,8 +14,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
 
 <div id="main">
-    <div class="default_title">
-        <h1><span class="icon-mycomputer"></span><?php $this->options->title() ?></h1>
+    <div class="top_title">
+        <h1><span class="icon-computer"></span><?php $this->options->title() ?></h1>
     </div>
     <?php $this->need('nav.php'); ?>
 	<div id="disk" class="tag_list">
@@ -29,7 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 </ul>
             </li>
 		</ul>
-		<br>
+		
 		<ul id="tag-list">
 		    <li><span class="icon-folder"></span>最新评论
     		    <ul>
@@ -40,7 +40,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 </ul>
             </li>
         </ul>
-        <br>
+        
         <!--友情链接-->
         <?php if ($this->options->links) { ?>
 		<ul id="tag-list">
@@ -58,7 +58,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             </li>
         </ul>
         <?php } ?>
-	</div>
+    </div>
     <div class="post_list">
         <ul>
             <?php while($this->next()): ?>
@@ -69,30 +69,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
     </div> 
     <div class="post_total">
         <div class="foot">
-            <?php _e('Powered by <a href="http://www.typecho.org" target="_blank">Typecho</a>'); ?> | 
-            &copy;<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a> | 
+            <?php _e('<a href="http://www.typecho.org" target="_blank">Typecho</a>'); ?>
+            &copy;<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
             <?php if ($this->options->beian) { ?>
-            <a href="http://beian.miit.gov.cn/" target="_blank"><?php $this->options->beian() ?></a> | 
+            <a href="http://beian.miit.gov.cn/" target="_blank"><?php $this->options->beian() ?></a>
             <?php } if ($this->options->gongan) { ?>
-            <a href="http://beian.miit.gov.cn/" target="_blank"><span class="icon-gongan"></span><?php $this->options->gongan() ?></a> | 
+            <a href="http://beian.miit.gov.cn/" target="_blank"><span class="icon-gongan"></span><?php $this->options->gongan() ?></a>
             <?php } ?>
-            全站共有 <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?><?php $stat->publishedPostsNum() ?> 篇文章
+            全站共有 <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?><?php $stat->publishedPostsNum() ?> 篇文章 
         </div>
     </div>
 </div>
-
-<script>
-if (document.body.clientWidth < 500) {
-    document.getElementById("disk").style.display="none";//隐藏
-}
-window.onresize=function(){
-    if (document.body.clientWidth < 500) {
-        document.getElementById("disk").style.display="none";//隐藏
-    } else {
-        document.getElementById("disk").style.display="";//显示
-    }
-}
-</script>
 <?php $this->need('footer.php'); ?>
 
 

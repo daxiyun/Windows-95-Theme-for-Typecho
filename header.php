@@ -17,5 +17,6 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/highlight.css'); ?>">
     <script src="<?php $this->options->themeUrl('js/highlight.min.js') ?>"></script>
     <?php } $this->header('generator=&template=&xmlrpc=&wlw=&commentReply=&antiSpam=&rss1=&rss2=&atom='); ?>
+    
 </head>
 <body>
