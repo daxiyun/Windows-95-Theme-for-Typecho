@@ -6,7 +6,7 @@
  * @package Windows 95 Theme for Typecho
  * @author 云滨
  * @version 103
- * @link https://github.com/vitoland/win95-Theme-for-Typecho
+ * @link https://github.com/vitoland/Windows-95-Theme-for-Typecho
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

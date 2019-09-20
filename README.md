@@ -12,7 +12,7 @@
 
 ### 当前最新版本 103
 
-**请前往 [Releases](https://github.com/vitoland/win95-Theme-for-Typecho/releases) 页面下载最新版，不要直接下载项目，当前项目为开发代码，不适合日常使用。**
+**请前往 [Releases](https://github.com/vitoland/Windows-95-Theme-for-Typecho/releases) 页面下载最新版，不要直接下载项目，当前项目为开发代码，不适合日常使用。**
 
 ## 更新日志
 
@@ -37,8 +37,8 @@
 
 ## 预览 https://www.liyunbin.com/
 
-![](https://raw.githubusercontent.com/vitoland/win95-Theme-for-Typecho/master/screenshot.png)
+![](https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/screenshot.png)
 
-![](https://raw.githubusercontent.com/vitoland/win95-Theme-for-Typecho/master/2.png)
+![](https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/2.png)
 
-![](https://raw.githubusercontent.com/vitoland/win95-Theme-for-Typecho/master/3.png)
+![](https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/3.png)

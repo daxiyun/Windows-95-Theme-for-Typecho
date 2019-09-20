@@ -20,8 +20,8 @@ function themeConfig($form) {
         file_put_contents(__DIR__."/config.txt", $result);
     }
     
-	$nversion = "103";
-	echo '<p id="version"></p><script>fetch("https://raw.githubusercontent.com/vitoland/win95-Theme-for-Typecho/master/version.txt").then(function(response){return response.json();}).then(function(data){if ('.$nversion.' < data) {document.getElementById("version").innerHTML = \'你正在使用 <span style="color:blue;">'.$nversion.'</span> 版，最新版本为 <span style="color:red;">\'+data+\'</span><a href="https://github.com/vitoland/Windows-95-Theme-for-Typecho" target="_blank"><button type="submit" class="btn btn-warn" style="margin-left:10px;">前往更新</button></a></p>\';}})</script>';
+	$nversion = "102";
+	echo '<p id="version"></p><script>fetch("https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/version.txt").then(function(response){return response.json();}).then(function(data){if ('.$nversion.' < data) {document.getElementById("version").innerHTML = \'你正在使用 <span style="color:blue;">'.$nversion.'</span> 版，最新版本为 <span style="color:red;">\'+data+\'</span><a href="https://github.com/vitoland/Windows-95-Theme-for-Typecho" target="_blank"><button type="submit" class="btn btn-warn" style="margin-left:10px;">前往更新</button></a></p>\';}})</script>';
         
     $nav = new Typecho_Widget_Helper_Form_Element_Textarea('nav', NULL, $config["nav"], _t('导航链接'), '');
     $form->addInput($nav);
