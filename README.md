@@ -10,7 +10,7 @@
 
 升级的时候，如果没有改动过文件，删除 config.txt 之外的所有文件，再上传新版即可。
 
-### 当前最新版本 103
+### 当前最新版本 104
 
 **请前往 [Releases](https://github.com/vitoland/Windows-95-Theme-for-Typecho/releases) 页面下载最新版，不要直接下载项目，当前项目为开发代码，不适合日常使用。**
 
