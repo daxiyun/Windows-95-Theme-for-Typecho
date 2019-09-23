@@ -19,7 +19,7 @@ function themeConfig($form) {
     } else {
         file_put_contents(__DIR__."/config.txt", $result);
     }
-	$version = "103";
+	$version = "104";
 	/////////////////////////////////////////////////////
 	//
     // 在下方 echo 前输入两个斜杠 // 注释掉代码即可。 //

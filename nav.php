@@ -15,7 +15,7 @@
                             $nav = trim($value);
                             $nav = explode("<=>",$nav);
                     ?>
-                    <li><a href="<?php echo $nav[1] ?>" target="_blank" title="<?php echo $nav[0] ?>"><span class="icon-internet"></span><?php echo $nav[0] ?></a></li>
+                    <li><a href="<?php echo $nav[1] ?>" target="_blank" title="<?php echo $nav[0] ?>"><span class="icon-file"></span><?php echo $nav[0] ?></a></li>
                     <?php } ?>
         <?php } ?>
     </ul>

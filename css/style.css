@@ -20,26 +20,26 @@ body{background:#008082;font-size:14px}
 ul.topbar{list-style:none;padding:0 5px;margin:3px 0}
 ul.topbar li{display:inline-block;margin:0 5px 0 0}
 ul.topbar a{text-decoration:none;color:#000}
-.post_content,.post_list,.tag_list{background:#f9f9f9;border-width:2px;border-style:ridge groove groove ridge;border-color:#7f787f #fff8ff #fff8ff #7f787f}
+.post_content,.post_list,.sidebar{background:#f9f9f9;border-width:2px;border-style:ridge groove groove ridge;border-color:#7f787f #fff8ff #fff8ff #7f787f}
 .post_list{width:78.5%;margin:0 auto;height:800px;overflow-y:scroll;display:inline-block}
 .post_list ul{list-style:none}
 .post_list ul li{display:inline-block;margin:20px;width:139px;height:74px;overflow:hidden;text-overflow:ellipsis;text-align:center}
 .post_list ul li img{display:block;margin:0 auto;margin-bottom:8px}
 .post_list ul li a{text-decoration:none;color:#000}
-.tag_list{width:20%;height:800px;overflow-y:scroll;display:inline-block}
-.tag_list img{height:16px;width:16px;margin:-2px 5px}
-.tag_list a{text-decoration:none;color:#000}
-.tag_list ul li{max-width:20ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#tag-list{background:transparent url(../img/pixel-alt.png) repeat-y 15px 0;margin:5px 5px 10px 5px}
-#tag-list li{padding:0 0 0 2px}
-#tag-list li a{background:#f9f9f9;display:block}
-#tag-list li ul li{background:transparent url(../img/pixel-alt.png) repeat-x 0 8px;margin:5px 0 0 15px;padding-left:10px}
-.post_total .foot{width:98.5%;font-size:12px;border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:3px;overflow:hidden;white-space:nowrap}
+.sidebar{width:20%;height:800px;overflow-y:scroll;display:inline-block}
+.sidebar img{height:16px;width:16px;margin:-2px 5px}
+.sidebar a{text-decoration:none;color:#000}
+.sidebar ul li{max-width:20ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag-list{background:transparent url(../img/pixel-alt.png) repeat-y 15px 0;margin:5px 5px 10px 5px}
+.tag-list li{padding:0 0 0 2px}
+.tag-list li a{background:#f9f9f9;display:block}
+.tag-list li ul li{background:transparent url(../img/pixel-alt.png) repeat-x 0 8px;margin:5px 0 0 15px;padding-left:10px}
+.post_total .foot{width:99%;font-size:12px;border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:3px;overflow:hidden;white-space:nowrap}
 .post_total .left,.post_total .right{border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:1px 3px}
 .post_total .left{width:33%;margin-left:2px}
 .post_total .right{width:64.5%;}
 .post_content{font-size:16px;padding:5px 13px;position:relative;max-height:790px;margin:0 auto;overflow-y:scroll;overflow-x:scroll}
-.post_content p{line-height:32px;text-indent:2em;line-height:150%;margin-bottom:15px}
+.post_content p{text-indent:2em;line-height:150%;margin-bottom:15px}
 .post_content p img {max-width:90%;}
 .post_content a{color:#00f;margin-bottom:15px}
 .post_content h1{font-size:26px;font-weight:700;margin:30px 0}
@@ -119,8 +119,8 @@ ul.topbar a{text-decoration:none;color:#000}
 .icon-home{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -152px 0}
 .icon-file-big{display:block;margin:0 0 10px 54px;width:32px;height:35px;background:url(../img/icon.png) -206px 0}
 .icon-file{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -116px 0}
-.icon-disk{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -98px 0}
-.icon-folder{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -134px 0}
+.icon-disk{display:inline-block;margin: 0 5px;width:16px;height:16px;background:url(../img/icon.png) -98px 0}
+.icon-folder{display:inline-block;margin: -3px 5px 0 6px;width:16px;height:16px;background:url(../img/icon.png) -134px 0}
 .icon-internet{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -170px 0}
 .icon-computer{display:inline-block;margin-right:5px;width:16px;height:16px;background:url(../img/icon.png) -188px 0}
 .icon-gongan{display:inline-block;width:12px;height:12px;background:url(../img/icon.png) -24px 0}
