@@ -14,7 +14,6 @@
             <div class="cancel-comment-reply">
                 <?php $comments->cancelReply(); ?>
             </div>
-
             <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
                 <?php if($this->user->hasLogin()): ?>
             	<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
@@ -43,7 +42,7 @@
             <?php } ?>
         </div>
         <?php else: ?>
-        <h3><?php _e('一年又一年，物是人已非。'); ?></h3>
+        <h3><?php _e('评论已关闭'); ?></h3>
         <?php endif; ?>
     </div>
 </div>
