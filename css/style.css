@@ -38,7 +38,7 @@ ul.topbar a{text-decoration:none;color:#000}
 .post_total .left,.post_total .right{border:1px solid;border-color:#888 #dadada #dadada #888;display:inline-block;padding:1px 3px}
 .post_total .left{width:33%;margin-left:2px}
 .post_total .right{width:64.5%;}
-.post_content{font-size:16px;padding:5px 13px;position:relative;max-height:790px;margin:0 auto;overflow-y:scroll;overflow-x:scroll}
+.post_content{font-size:16px;padding:5px 13px;position:relative;max-height:790px;margin:0 auto;overflow-y:scroll}
 .post_content p{text-indent:2em;line-height:150%;margin-bottom:15px}
 .post_content p img {max-width:90%;}
 .post_content a{color:#00f;margin-bottom:15px}
