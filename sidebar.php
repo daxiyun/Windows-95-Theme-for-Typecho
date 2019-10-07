@@ -27,7 +27,7 @@
         <?php if ($this->options->links) { ?>
 		<ul class="tag-list">
 		    <li><span class="icon-folder"></span>友情链接
-    		    <ul class="links" data-no-instant>
+    		    <ul class="links">
     		        <?php
                     	$array = explode(PHP_EOL,$this->options->links);
                         foreach (explode(PHP_EOL,$this->options->links) as $value) {

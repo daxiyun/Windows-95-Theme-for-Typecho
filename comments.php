@@ -1,6 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<div id="comments" data-no-instant>
-    <div id="commentsBox">
+<div id="comments">
         <?php $this->comments()->to($comments); ?>
         <?php if ($comments->have()): ?>
         <h3>
@@ -31,18 +30,8 @@
                     <button type="submit" class="submit"><?php _e('提交评论'); ?></button>
                 </p>
             </form>
-            <?php if ($this->options->instantclick === 'true') { ?>
-            <?php $this->header('keywords=&description=&rss1=&rss2=&atom=&generator=&template=&pingback=&xmlrpc=&wlw='); ?>
-            <script>
-                $('#comment-form').ajaxForm(function () {
-                    var url_tmp = window.location.pathname;
-                    $("#comments").load(url_tmp + " #commentsBox");
-                });
-            </script>
-            <?php } ?>
         </div>
         <?php else: ?>
         <h3><?php _e('评论已关闭'); ?></h3>
         <?php endif; ?>
-    </div>
 </div>

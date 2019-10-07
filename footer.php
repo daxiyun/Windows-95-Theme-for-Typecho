@@ -35,19 +35,6 @@ function picClose() {
     document.getElementById('bigBox').style.display = "none";
 }
 </script>
-<?php if ($this->options->instantclick === 'true') { ?>
-<script src="<?php $this->options->themeUrl('js/instantclick.min.js') ?>" data-no-instant></script>
-<script data-no-instant>
-InstantClick.on('change', function() {
-    <?php if ($this->options->highlight === 'true') { ?>
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-        hljs.lineNumbersBlock(block);
-    });
-    <?php } $this->options->JSload()?>
-});
-InstantClick.init('mousedown');
-</script>
-<?php } $this->options->tongji() ?>
+<?php $this->options->tongji() ?>
 </body>
 </html>

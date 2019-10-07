@@ -33,8 +33,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             &copy;<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
             <?php if ($this->options->beian) { ?>
             <a href="http://beian.miit.gov.cn/" target="_blank"><?php $this->options->beian() ?></a>
-            <?php } if ($this->options->gongan) { ?>
-            <a href="http://beian.miit.gov.cn/" target="_blank"><span class="icon-gongan"></span><?php $this->options->gongan() ?></a>
+            <?php } if ($this->options->gongan) { preg_match('/\d+/',$this->options->gongan,$arr) ?>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<?php echo $arr[0] ?>" target="_blank"><span class="icon-gongan"></span><?php $this->options->gongan() ?></a>
             <?php } ?>
             全站共有 <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?><?php $stat->publishedPostsNum() ?> 篇文章 
         </div>

@@ -16,10 +16,7 @@
     <?php if ($this->options->highlight === "true") { ?>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/highlight.css'); ?>">
     <script src="<?php $this->options->themeUrl('js/highlight.min.js') ?>"></script>
-    <?php if ($this->options->instantclick === 'true') { ?>
-    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.staticfile.org/jquery.form/4.2.2/jquery.form.min.js"></script>
-    <?php } else { $this->header('generator=&template=&xmlrpc=&wlw=&rss1=&rss2=&atom='); } } ?>
+    <?php } $this->header('keywords=&description=&rss1=&rss2=&atom=&generator=&template=&pingback=&xmlrpc=&wlw='); ?>
     
 </head>
 <body>
