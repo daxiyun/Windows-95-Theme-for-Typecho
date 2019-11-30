@@ -42,7 +42,7 @@
 
 - 道生一
 
-## 预览 https://www.liyunbin.com/
+## 预览
 
 ![](https://raw.githubusercontent.com/vitoland/Windows-95-Theme-for-Typecho/master/screenshot.png)
 
